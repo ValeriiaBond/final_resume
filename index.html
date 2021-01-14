@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valeriia Bondarenko</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap');
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="introduction">
+		<div class="container intro_content">
+			<div class="intro_caption">
+				<div class="caption_photo">
+					<img src="images/photo.jpg" alt="valeriia bondarenko">
+				</div>
+				<div class="caption_title">
+					<h1>Valeriia Bondarenko</h1>
+					<h2>Intern Front-End Developer</h2>
+				</div>
+			</div>
+			<div class="intro_description">
+					<div class="general_description">After finishing a front-end course  I have decided that I want to continue my development in this sphere. I am inspired by brining web pages to life and delivering the best experience to users.</div>
+					<div class="personal_info">
+						<p>Date of birth: March, 23</p>
+						<p><a href="tel:+380994031328">Phone: +38(099)-403-13-281</a></p>
+						<p><a href="mailto:valeriiasbondarenko@gmail.cou">Email: valeriiasbondarenko@gmail.com</a></p>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="main_content container">
+		<div class="left_side">
+			<div class="education">
+				<h3>Education</h3>
+				<div class="kh_university left_border">
+					<h4>S. Kuznets Kharkiv National University of Economics</h4>
+					<h5>Management and business administration</h5>
+					<p>09/2014 - 12/2019</p>
+				</div>
+				<div class="fr_university left_border">
+					<h4>Lyon Lumiere 2 (France)</h4>
+					<h5>Economy and Management</h5>
+					<p>01/2017 - 07/2017</p>
+				</div>
+			</div>
+			<div class="courses">
+				<h3>Courses</h3>
+				<div class="lemon_school left_border">
+					<h4>Lemon.School</h4>
+					<h5>HTML/CSS + JavaScript</h5>
+					<p>09/2020 - 12/2020</p>	
+					<div class="certificate">
+						<input class="certificate_input" type="checkbox" id="certificate">
+						<label class="certificate_title" for="certificate">Certificate</label>
+						<div class="certificate_content">
+							<img src="images/certificate_lemonschool.jpg" alt="">
+						</div>
+					</div>				
+				</div>
+			</div>
+			<div class="contacts">
+				<h3>links</h3>
+				<div class="link_items">
+					<ul class="contact_list left_border">
+						<li><a target="_blank" href="#"></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/valeria-bondarenko-23a083163/"></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100011553276880"></a></li>
+					</ul>
+					<a class="btn_download" href="Valeriia Bondarenko_2.pdf" target="_blank">Download CV in PDF format</a>
+				</div>
+			</div>			
+		</div>
+		<div class="right_side">
+			<div class="skills">
+				<h3>skills</h3>
+				<ul class="skills_list right_border">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Basic knowledge of JavaScript and JQuery</li>
+					<li>Bootstrap3, Bootstrap4</li>
+					<li>GIT</li>
+				</ul>
+				<ul class="languages right_border">
+					<li>Russian
+						<p>Native</p>
+					</li>
+					<li>English
+						<p>Upper-Intermediate</p>
+					</li>
+					<li>French
+						<p>Elementary</p>
+					</li>
+				</ul>
+			</div>
+			<div class="projects">
+				<h3>Projects</h3>
+				<div class="carousel right_border">
+					<div class="arrow_previous">&#5176;</div>
+					<div class="carousel_hider">
+						<ul class="carousel_list">
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+						</ul>
+					</div>
+					<div class="arrow_next">&#5171;</div>
+				</div>
+				<ul class="carousel_dots">
+					<li class="active"><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('.carousel_dots li').click(function(){
+				$('li.active').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+</body>
+</html>
